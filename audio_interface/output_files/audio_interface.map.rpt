@@ -1,5 +1,5 @@
 Analysis & Synthesis report for audio_interface
-Tue Nov 11 00:58:27 2025
+Tue Nov 11 22:35:43 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -51,48 +51,51 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
  43. Parameter Settings for User Entity Instance: audio_generator:A1|waveform_generator:W10|rom256x16:U1|altsyncram:altsyncram_component
  44. Parameter Settings for User Entity Instance: audio_generator:A1|waveform_generator:W11|rom256x16:U1|altsyncram:altsyncram_component
  45. Parameter Settings for User Entity Instance: audio_generator:A1|waveform_generator:W12|rom256x16:U1|altsyncram:altsyncram_component
- 46. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
- 47. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
- 48. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
- 49. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
- 50. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
- 51. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
- 52. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
- 53. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
- 54. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
- 55. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
- 56. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
- 57. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Audio_Clock:Audio_Clock|altpll:altpll_component
- 58. Parameter Settings for User Entity Instance: avconf:AVC1
- 59. Parameter Settings for Inferred Entity Instance: audio_generator:A1|lpm_divide:Div0
- 60. altsyncram Parameter Settings by Entity Instance
- 61. scfifo Parameter Settings by Entity Instance
- 62. altpll Parameter Settings by Entity Instance
- 63. Port Connectivity Checks: "avconf:AVC1|I2C_Controller:u0"
- 64. Port Connectivity Checks: "Audio_Controller:AC1|Audio_Clock:Audio_Clock"
- 65. Port Connectivity Checks: "Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
- 66. Port Connectivity Checks: "Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
- 67. Port Connectivity Checks: "Audio_Controller:AC1"
- 68. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W12"
- 69. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W11"
- 70. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W10"
- 71. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W9"
- 72. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W8"
- 73. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W7"
- 74. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W6"
- 75. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W5"
- 76. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W4"
- 77. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W3"
- 78. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W2"
- 79. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W1|numerically_controlled_oscillator:N1"
- 80. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W1"
- 81. Port Connectivity Checks: "audio_generator:A1"
- 82. Port Connectivity Checks: "loop_counter:L1"
- 83. Port Connectivity Checks: "BPM_counter:B1"
- 84. Post-Synthesis Netlist Statistics for Top Partition
- 85. Elapsed Time Per Partition
- 86. Analysis & Synthesis Messages
- 87. Analysis & Synthesis Suppressed Messages
+ 46. Parameter Settings for User Entity Instance: DAC_controller:DC1
+ 47. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
+ 48. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
+ 49. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
+ 50. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 51. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
+ 52. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 53. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
+ 54. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
+ 55. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 56. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
+ 57. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 58. Parameter Settings for User Entity Instance: Audio_Controller:AC1|Audio_Clock:Audio_Clock|altpll:altpll_component
+ 59. Parameter Settings for User Entity Instance: avconf:AVC1
+ 60. Parameter Settings for Inferred Entity Instance: audio_generator:A1|lpm_divide:Div0
+ 61. altsyncram Parameter Settings by Entity Instance
+ 62. scfifo Parameter Settings by Entity Instance
+ 63. altpll Parameter Settings by Entity Instance
+ 64. Port Connectivity Checks: "avconf:AVC1|I2C_Controller:u0"
+ 65. Port Connectivity Checks: "Audio_Controller:AC1|Audio_Clock:Audio_Clock"
+ 66. Port Connectivity Checks: "Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
+ 67. Port Connectivity Checks: "Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
+ 68. Port Connectivity Checks: "Audio_Controller:AC1"
+ 69. Port Connectivity Checks: "DAC_controller:DC1|I2C_Controller_DAC:U1"
+ 70. Port Connectivity Checks: "DAC_controller:DC1"
+ 71. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W12"
+ 72. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W11"
+ 73. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W10"
+ 74. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W9"
+ 75. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W8"
+ 76. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W7"
+ 77. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W6"
+ 78. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W5"
+ 79. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W4"
+ 80. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W3"
+ 81. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W2"
+ 82. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W1|numerically_controlled_oscillator:N1"
+ 83. Port Connectivity Checks: "audio_generator:A1|waveform_generator:W1"
+ 84. Port Connectivity Checks: "audio_generator:A1"
+ 85. Port Connectivity Checks: "loop_counter:L1"
+ 86. Port Connectivity Checks: "BPM_counter:B1"
+ 87. Post-Synthesis Netlist Statistics for Top Partition
+ 88. Elapsed Time Per Partition
+ 89. Analysis & Synthesis Messages
+ 90. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -119,14 +122,14 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 11 00:58:27 2025           ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 11 22:35:43 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; audio_interface                                 ;
 ; Top-level Entity Name           ; audio_interface                                 ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 478                                             ;
-; Total pins                      ; 30                                              ;
+; Total pins                      ; 33                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 36,864                                          ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -244,8 +247,7 @@ on the Quartus Prime software download page.
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processors 8-10        ;   0.0%      ;
+;     Processors 7-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -254,6 +256,8 @@ on the Quartus Prime software download page.
 +------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                           ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                       ; Library ;
 +------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
+; modules/DAC_controller/I2C_Controller_DAC.v                ; yes             ; User Verilog HDL File                  ; D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/I2C_Controller_DAC.v                ;         ;
+; modules/DAC_controller/DAC_controller.v                    ; yes             ; User Verilog HDL File                  ; D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/DAC_controller.v                    ;         ;
 ; modules/rom256x16/rom256x16.v                              ; yes             ; User Wizard-Generated File             ; D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/rom256x16/rom256x16.v                              ;         ;
 ; modules/loop_counter/loop_counter.v                        ; yes             ; User Verilog HDL File                  ; D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v                        ;         ;
 ; modules/BPM_counter/BPM_counter.v                          ; yes             ; User Verilog HDL File                  ; D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/BPM_counter/BPM_counter.v                          ;         ;
@@ -311,18 +315,18 @@ on the Quartus Prime software download page.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 597            ;
+; Estimate of Logic utilization (ALMs needed) ; 625            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1114           ;
+; Combinational ALUT usage for logic          ; 1171           ;
 ;     -- 7 input functions                    ; 2              ;
-;     -- 6 input functions                    ; 73             ;
+;     -- 6 input functions                    ; 71             ;
 ;     -- 5 input functions                    ; 150            ;
-;     -- 4 input functions                    ; 211            ;
-;     -- <=3 input functions                  ; 678            ;
+;     -- 4 input functions                    ; 213            ;
+;     -- <=3 input functions                  ; 735            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 478            ;
 ;                                             ;                ;
-; I/O pins                                    ; 30             ;
+; I/O pins                                    ; 33             ;
 ; Total MLAB memory bits                      ; 0              ;
 ; Total block memory bits                     ; 36864          ;
 ;                                             ;                ;
@@ -333,8 +337,8 @@ on the Quartus Prime software download page.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 583            ;
-; Total fan-out                               ; 7411           ;
-; Average fan-out                             ; 4.04           ;
+; Total fan-out                               ; 7526           ;
+; Average fan-out                             ; 3.97           ;
 +---------------------------------------------+----------------+
 
 
@@ -343,7 +347,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                 ; Entity Name                       ; Library Name ;
 +-------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |audio_interface                                            ; 1114 (1)            ; 478 (16)                  ; 36864             ; 0          ; 30   ; 0            ; |audio_interface                                                                                                                                                                                                                    ; audio_interface                   ; work         ;
+; |audio_interface                                            ; 1171 (1)            ; 478 (16)                  ; 36864             ; 0          ; 33   ; 0            ; |audio_interface                                                                                                                                                                                                                    ; audio_interface                   ; work         ;
 ;    |Audio_Controller:AC1|                                   ; 159 (2)             ; 110 (2)                   ; 8192              ; 0          ; 0    ; 0            ; |audio_interface|Audio_Controller:AC1                                                                                                                                                                                               ; Audio_Controller                  ; work         ;
 ;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer| ; 156 (60)            ; 104 (38)                  ; 8192              ; 0          ; 0    ; 0            ; |audio_interface|Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                           ; Altera_UP_Audio_Out_Serializer    ; work         ;
 ;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|  ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|Audio_Controller:AC1|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO               ; work         ;
@@ -368,42 +372,42 @@ on the Quartus Prime software download page.
 ;          |altpll:altpll_component|                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|Audio_Controller:AC1|Audio_Clock:Audio_Clock|altpll:altpll_component                                                                                                                                               ; altpll                            ; work         ;
 ;             |Audio_Clock_altpll:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|Audio_Controller:AC1|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated                                                                                                             ; Audio_Clock_altpll                ; work         ;
 ;    |BPM_counter:B1|                                         ; 39 (39)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|BPM_counter:B1                                                                                                                                                                                                     ; BPM_counter                       ; work         ;
-;    |audio_generator:A1|                                     ; 787 (225)           ; 230 (16)                  ; 28672             ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1                                                                                                                                                                                                 ; audio_generator                   ; work         ;
+;    |audio_generator:A1|                                     ; 844 (226)           ; 230 (16)                  ; 28672             ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1                                                                                                                                                                                                 ; audio_generator                   ; work         ;
 ;       |lpm_divide:Div0|                                     ; 344 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|lpm_divide:Div0                                                                                                                                                                                 ; lpm_divide                        ; work         ;
 ;          |lpm_divide_ibm:auto_generated|                    ; 344 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|lpm_divide:Div0|lpm_divide_ibm:auto_generated                                                                                                                                                   ; lpm_divide_ibm                    ; work         ;
 ;             |sign_div_unsign_olh:divider|                   ; 344 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                                                                                                                       ; sign_div_unsign_olh               ; work         ;
 ;                |alt_u_div_mve:divider|                      ; 344 (344)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_mve:divider                                                                                                 ; alt_u_div_mve                     ; work         ;
-;       |waveform_generator:W1|                               ; 30 (0)              ; 30 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W1                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W1|                               ; 38 (8)              ; 30 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W1                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 30 (30)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W1|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W1|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W1|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
 ;                |altsyncram_05g1:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W1|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated                                                                                               ; altsyncram_05g1                   ; work         ;
-;       |waveform_generator:W2|                               ; 30 (0)              ; 30 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W2                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W2|                               ; 38 (8)              ; 30 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W2                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 30 (30)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W2|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W2|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W2|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
 ;                |altsyncram_05g1:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W2|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated                                                                                               ; altsyncram_05g1                   ; work         ;
-;       |waveform_generator:W3|                               ; 31 (0)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W3                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W3|                               ; 39 (8)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W3                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 31 (31)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W3|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W3|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W3|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
 ;                |altsyncram_05g1:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W3|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated                                                                                               ; altsyncram_05g1                   ; work         ;
-;       |waveform_generator:W4|                               ; 31 (0)              ; 30 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W4                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W4|                               ; 39 (8)              ; 30 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W4                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 31 (31)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W4|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W4|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W4|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
 ;                |altsyncram_05g1:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W4|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated                                                                                               ; altsyncram_05g1                   ; work         ;
-;       |waveform_generator:W5|                               ; 32 (0)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W5                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W5|                               ; 40 (8)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W5                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 32 (32)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W5|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W5|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W5|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
 ;                |altsyncram_05g1:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W5|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated                                                                                               ; altsyncram_05g1                   ; work         ;
-;       |waveform_generator:W6|                               ; 32 (0)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W6                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W6|                               ; 40 (8)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W6                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 32 (32)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W6|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W6|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W6|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
 ;                |altsyncram_05g1:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W6|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated                                                                                               ; altsyncram_05g1                   ; work         ;
-;       |waveform_generator:W7|                               ; 32 (0)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W7                                                                                                                                                                           ; waveform_generator                ; work         ;
+;       |waveform_generator:W7|                               ; 40 (8)              ; 31 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W7                                                                                                                                                                           ; waveform_generator                ; work         ;
 ;          |numerically_controlled_oscillator:N1|             ; 32 (32)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W7|numerically_controlled_oscillator:N1                                                                                                                                      ; numerically_controlled_oscillator ; work         ;
 ;          |rom256x16:U1|                                     ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W7|rom256x16:U1                                                                                                                                                              ; rom256x16                         ; work         ;
 ;             |altsyncram:altsyncram_component|               ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |audio_interface|audio_generator:A1|waveform_generator:W7|rom256x16:U1|altsyncram:altsyncram_component                                                                                                                              ; altsyncram                        ; work         ;
@@ -492,6 +496,42 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|right_audio_fifo_read_space[6,7]                                                                                                                              ; Lost fanout                                                                                              ;
 ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|empty_dff                                     ; Lost fanout                                                                                              ;
 ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|empty_dff                                    ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_CTRL_CLK                                                                                                                                                                                                         ; Stuck at GND due to stuck port clear                                                                     ;
+; DAC_controller:DC1|mI2C_CLK_DIV[1..15]                                                                                                                                                                                                   ; Stuck at GND due to stuck port clear                                                                     ;
+; DAC_controller:DC1|mI2C_GO                                                                                                                                                                                                               ; Stuck at GND due to stuck port clear                                                                     ;
+; DAC_controller:DC1|mI2C_CLK_DIV[0]                                                                                                                                                                                                       ; Stuck at GND due to stuck port clear                                                                     ;
+; DAC_controller:DC1|mI2C_DATA[15..31]                                                                                                                                                                                                     ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[15]                                                                                                                                                                                                                         ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[14]                                                                                                                                                                                                         ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[14]                                                                                                                                                                                                                         ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[13]                                                                                                                                                                                                         ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[13]                                                                                                                                                                                                                         ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[12]                                                                                                                                                                                                         ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[12]                                                                                                                                                                                                                         ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[11]                                                                                                                                                                                                         ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[11]                                                                                                                                                                                                                         ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[10]                                                                                                                                                                                                         ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[10]                                                                                                                                                                                                                         ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[9]                                                                                                                                                                                                          ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[9]                                                                                                                                                                                                                          ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[8]                                                                                                                                                                                                          ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[8]                                                                                                                                                                                                                          ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[7]                                                                                                                                                                                                          ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[7]                                                                                                                                                                                                                          ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[6]                                                                                                                                                                                                          ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[6]                                                                                                                                                                                                                          ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[5]                                                                                                                                                                                                          ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[5]                                                                                                                                                                                                                          ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[4]                                                                                                                                                                                                          ; Stuck at GND due to stuck port clear                                                                     ;
+; audio_signed[4]                                                                                                                                                                                                                          ; Lost fanout                                                                                              ;
+; DAC_controller:DC1|mI2C_DATA[0..3]                                                                                                                                                                                                       ; Stuck at GND due to stuck port clear                                                                     ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[0]                                                                                                                                                                                           ; Stuck at GND due to stuck port clock                                                                     ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[7]                                                                                                                                                                                   ; Stuck at GND due to stuck port clear                                                                     ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[0..6]                                                                                                                                                                                ; Stuck at VCC due to stuck port preset                                                                    ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|SCLK                                                                                                                                                                                            ; Stuck at VCC due to stuck port preset                                                                    ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|SDO                                                                                                                                                                                             ; Stuck at VCC due to stuck port preset                                                                    ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|END                                                                                                                                                                                             ; Stuck at VCC due to stuck port preset                                                                    ;
+; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[1..31]                                                                                                                                                                                       ; Stuck at GND due to stuck port clock                                                                     ;
 ; Audio_Controller:AC1|done_adc_channel_sync                                                                                                                                                                                               ; Lost fanout                                                                                              ;
 ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[1..32]                                                                                                                                      ; Lost fanout                                                                                              ;
 ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|full_dff                                     ; Lost fanout                                                                                              ;
@@ -553,7 +593,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; audio_generator:A1|waveform_generator:W7|numerically_controlled_oscillator:N1|phase_angle[0]                                                                                                                                             ; Stuck at GND due to stuck port data_in                                                                   ;
 ; avconf:AVC1|mSetup_ST~9                                                                                                                                                                                                                  ; Lost fanout                                                                                              ;
 ; avconf:AVC1|mSetup_ST~10                                                                                                                                                                                                                 ; Lost fanout                                                                                              ;
-; Total Number of Removed Registers = 344                                                                                                                                                                                                  ;                                                                                                          ;
+; Total Number of Removed Registers = 449                                                                                                                                                                                                  ;                                                                                                          ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -562,6 +602,67 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                                                                                                        ; Reason for Removal        ; Registers Removed due to This Register                                                                                                                                                                                                 ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; DAC_controller:DC1|mI2C_CTRL_CLK                                                                                                                                                                     ; Stuck at GND              ; DAC_controller:DC1|mI2C_GO, DAC_controller:DC1|mI2C_DATA[31],                                                                                                                                                                          ;
+;                                                                                                                                                                                                      ; due to stuck port clear   ; DAC_controller:DC1|mI2C_DATA[30], DAC_controller:DC1|mI2C_DATA[29],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[28], DAC_controller:DC1|mI2C_DATA[27],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[26], DAC_controller:DC1|mI2C_DATA[25],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[24], DAC_controller:DC1|mI2C_DATA[23],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[22], DAC_controller:DC1|mI2C_DATA[21],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[20], DAC_controller:DC1|mI2C_DATA[19],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[18], DAC_controller:DC1|mI2C_DATA[17],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[16], DAC_controller:DC1|mI2C_DATA[15], audio_signed[15],                                                                                                                                                  ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[14], audio_signed[14], DAC_controller:DC1|mI2C_DATA[13],                                                                                                                                                  ;
+;                                                                                                                                                                                                      ;                           ; audio_signed[13], DAC_controller:DC1|mI2C_DATA[12], audio_signed[12],                                                                                                                                                                  ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[11], audio_signed[11], DAC_controller:DC1|mI2C_DATA[10],                                                                                                                                                  ;
+;                                                                                                                                                                                                      ;                           ; audio_signed[10], DAC_controller:DC1|mI2C_DATA[9], audio_signed[9],                                                                                                                                                                    ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[8], audio_signed[8], DAC_controller:DC1|mI2C_DATA[7],                                                                                                                                                     ;
+;                                                                                                                                                                                                      ;                           ; audio_signed[7], DAC_controller:DC1|mI2C_DATA[6], audio_signed[6],                                                                                                                                                                     ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[5], audio_signed[5], DAC_controller:DC1|mI2C_DATA[4],                                                                                                                                                     ;
+;                                                                                                                                                                                                      ;                           ; audio_signed[4], DAC_controller:DC1|mI2C_DATA[3], DAC_controller:DC1|mI2C_DATA[2],                                                                                                                                                     ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|mI2C_DATA[1], DAC_controller:DC1|mI2C_DATA[0],                                                                                                                                                                      ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[0],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[7],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[6],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[5],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[4],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[3],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[2],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[1],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD_COUNTER[0],                                                                                                                                                                                ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SCLK,                                                                                                                                                                                         ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SDO,                                                                                                                                                                                          ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|END,                                                                                                                                                                                          ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[31],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[30],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[29],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[28],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[27],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[26],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[25],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[24],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[23],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[22],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[21],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[20],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[19],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[18],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[17],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[16],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[15],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[14],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[13],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[12],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[11],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[10],                                                                                                                                                                                       ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[9],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[8],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[7],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[6],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[5],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[4],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[3],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[2],                                                                                                                                                                                        ;
+;                                                                                                                                                                                                      ;                           ; DAC_controller:DC1|I2C_Controller_DAC:U1|SD[1]                                                                                                                                                                                         ;
 ; Audio_Controller:AC1|audio_in_available                                                                                                                                                              ; Lost Fanouts              ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[6],                                                                                                                              ;
 ;                                                                                                                                                                                                      ;                           ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[7],                                                                                                                              ;
 ;                                                                                                                                                                                                      ;                           ; Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|right_audio_fifo_read_space[6],                                                                                                                             ;
@@ -1527,6 +1628,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC_controller:DC1 ;
++----------------+----------+-------------------------------------+
+; Parameter Name ; Value    ; Type                                ;
++----------------+----------+-------------------------------------+
+; CLK_Freq       ; 50000000 ; Signed Integer                      ;
+; I2C_Freq       ; 400000   ; Signed Integer                      ;
+; SLAVE_ADDR     ; 11000000 ; Unsigned Binary                     ;
+; CMD_WRITE_DAC  ; 01000000 ; Unsigned Binary                     ;
++----------------+----------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer ;
 +------------------+-------+----------------------------------------------------------------------------------------------+
@@ -2400,6 +2514,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+--------+----------+------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAC_controller:DC1|I2C_Controller_DAC:U1"                                                                      ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; ACK        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; SD_COUNTER ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; SDO        ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "DAC_controller:DC1" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; reset ; Input ; Info     ; Stuck at VCC        ;
++-------+-------+----------+---------------------+
+
+
 +-----------------------------------------------------------------------+
 ; Port Connectivity Checks: "audio_generator:A1|waveform_generator:W12" ;
 +-------------------------+-------+----------+--------------------------+
@@ -2596,13 +2730,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------+-------+----------+-------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "audio_generator:A1|waveform_generator:W1|numerically_controlled_oscillator:N1"                    ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port               ; Type   ; Severity ; Details                                                                             ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
-; phase_angle[23..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "audio_generator:A1|waveform_generator:W1|numerically_controlled_oscillator:N1"                     ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; phase_angle[23..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; phase_angle[7..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -2668,8 +2803,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 71                          ;
 ;     SCLR              ; 39                          ;
 ;     plain             ; 30                          ;
-; arriav_io_obuf        ; 4                           ;
-; arriav_lcell_comb     ; 1114                        ;
+; arriav_io_obuf        ; 5                           ;
+; arriav_lcell_comb     ; 1172                        ;
 ;     arith             ; 654                         ;
 ;         0 data inputs ; 60                          ;
 ;         1 data inputs ; 312                         ;
@@ -2679,24 +2814,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 51                          ;
 ;     extend            ; 2                           ;
 ;         7 data inputs ; 2                           ;
-;     normal            ; 453                         ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 511                         ;
+;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 18                          ;
-;         2 data inputs ; 89                          ;
-;         3 data inputs ; 132                         ;
-;         4 data inputs ; 41                          ;
+;         2 data inputs ; 145                         ;
+;         3 data inputs ; 133                         ;
+;         4 data inputs ; 43                          ;
 ;         5 data inputs ; 99                          ;
-;         6 data inputs ; 73                          ;
+;         6 data inputs ; 71                          ;
 ;     shared            ; 5                           ;
 ;         0 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 2                           ;
-; boundary_port         ; 30                          ;
+; boundary_port         ; 33                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 176                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 55.00                       ;
-; Average LUT depth     ; 21.28                       ;
+; Average LUT depth     ; 20.80                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2715,10 +2850,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Tue Nov 11 00:58:19 2025
+    Info: Processing started: Tue Nov 11 22:35:32 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off audio_interface -c audio_interface
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file modules/audio_interface/audio_interface_module.v
+    Info (12023): Found entity 1: audio_interface_module File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_interface/audio_interface_module.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/dac_controller/i2c_controller_dac.v
+    Info (12023): Found entity 1: I2C_Controller_DAC File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/I2C_Controller_DAC.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file modules/dac_controller/dac_controller.v
+    Info (12023): Found entity 1: DAC_controller File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/DAC_controller.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file modules/rom256x16/rom256x16.v
     Info (12023): Found entity 1: rom256x16 File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/rom256x16/rom256x16.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file modules/loop_counter/loop_counter.v
@@ -2732,7 +2873,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file modules
 Info (12021): Found 3 design units, including 3 entities, in source file modules/audio_generator/audio_generator.v
     Info (12023): Found entity 1: audio_generator File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 1
     Info (12023): Found entity 2: waveform_generator File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 48
-    Info (12023): Found entity 3: numerically_controlled_oscillator File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 60
+    Info (12023): Found entity 3: numerically_controlled_oscillator File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 62
 Info (12021): Found 1 design units, including 1 entities, in source file modules/audio_controller/audio_controller.v
     Info (12023): Found entity 1: Audio_Controller File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/Audio_Controller/Audio_Controller.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file modules/audio_controller/audio_clock.v
@@ -2749,9 +2890,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file modules
     Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/Audio_Controller/Altera_UP_Audio_Bit_Counter.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file audio_interface.v
     Info (12023): Found entity 1: audio_interface File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at audio_interface_module.v(154): created implicit net for "CLOCK_50" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_interface/audio_interface_module.v Line: 154
+Warning (10236): Verilog HDL Implicit Net warning at audio_interface.v(83): created implicit net for "A0" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 83
+Warning (10236): Verilog HDL Implicit Net warning at audio_interface.v(121): created implicit net for "Clock" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 121
+Warning (10236): Verilog HDL Implicit Net warning at audio_interface.v(122): created implicit net for "nReset" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 122
 Info (12127): Elaborating entity "audio_interface" for the top level hierarchy
-Info (12128): Elaborating entity "BPM_counter" for hierarchy "BPM_counter:B1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 91
-Info (12128): Elaborating entity "loop_counter" for hierarchy "loop_counter:L1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 99
+Warning (10036): Verilog HDL or VHDL warning at audio_interface.v(83): object "A0" assigned a value but never read File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 83
+Warning (10030): Net "nReset" at audio_interface.v(122) has no driver or initial value, using a default initial value '0' File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 122
+Warning (10034): Output port "DAC_I2C_A0" at audio_interface.v(44) has no driver File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 44
+Info (12128): Elaborating entity "BPM_counter" for hierarchy "BPM_counter:B1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 102
+Info (12128): Elaborating entity "loop_counter" for hierarchy "loop_counter:L1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 110
 Warning (10230): Verilog HDL assignment warning at loop_counter.v(25): truncated value with size 32 to match size of target (12) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 25
 Warning (10230): Verilog HDL assignment warning at loop_counter.v(39): truncated value with size 32 to match size of target (12) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 39
 Warning (10240): Verilog HDL Always Construct warning at loop_counter.v(11): inferring latch(es) for variable "Loops_latched", which holds its previous value in one or more paths through the always construct File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 11
@@ -2776,11 +2924,11 @@ Info (10041): Inferred latch for "Loops_latched[4]" at loop_counter.v(11) File: 
 Info (10041): Inferred latch for "Loops_latched[5]" at loop_counter.v(11) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 11
 Info (10041): Inferred latch for "Loops_latched[6]" at loop_counter.v(11) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 11
 Info (10041): Inferred latch for "Loops_latched[7]" at loop_counter.v(11) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 11
-Info (12128): Elaborating entity "audio_generator" for hierarchy "audio_generator:A1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 106
+Info (12128): Elaborating entity "audio_generator" for hierarchy "audio_generator:A1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 117
 Warning (10230): Verilog HDL assignment warning at audio_generator.v(43): truncated value with size 32 to match size of target (16) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 43
 Info (12128): Elaborating entity "waveform_generator" for hierarchy "audio_generator:A1|waveform_generator:W1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 21
 Info (12128): Elaborating entity "numerically_controlled_oscillator" for hierarchy "audio_generator:A1|waveform_generator:W1|numerically_controlled_oscillator:N1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 54
-Info (12128): Elaborating entity "rom256x16" for hierarchy "audio_generator:A1|waveform_generator:W1|rom256x16:U1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 57
+Info (12128): Elaborating entity "rom256x16" for hierarchy "audio_generator:A1|waveform_generator:W1|rom256x16:U1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/audio_generator/audio_generator.v Line: 58
 Info (12128): Elaborating entity "altsyncram" for hierarchy "audio_generator:A1|waveform_generator:W1|rom256x16:U1|altsyncram:altsyncram_component" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/rom256x16/rom256x16.v Line: 82
 Info (12130): Elaborated megafunction instantiation "audio_generator:A1|waveform_generator:W1|rom256x16:U1|altsyncram:altsyncram_component" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/rom256x16/rom256x16.v Line: 82
 Info (12133): Instantiated megafunction "audio_generator:A1|waveform_generator:W1|rom256x16:U1|altsyncram:altsyncram_component" with the following parameter: File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/rom256x16/rom256x16.v Line: 82
@@ -2801,7 +2949,13 @@ Info (12133): Instantiated megafunction "audio_generator:A1|waveform_generator:W
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_05g1.tdf
     Info (12023): Found entity 1: altsyncram_05g1 File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/db/altsyncram_05g1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_05g1" for hierarchy "audio_generator:A1|waveform_generator:W1|rom256x16:U1|altsyncram:altsyncram_component|altsyncram_05g1:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:AC1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 137
+Info (12128): Elaborating entity "DAC_controller" for hierarchy "DAC_controller:DC1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 127
+Warning (10230): Verilog HDL assignment warning at DAC_controller.v(51): truncated value with size 32 to match size of target (16) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/DAC_controller.v Line: 51
+Info (12128): Elaborating entity "I2C_Controller_DAC" for hierarchy "DAC_controller:DC1|I2C_Controller_DAC:U1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/DAC_controller.v Line: 90
+Warning (10230): Verilog HDL assignment warning at I2C_Controller_DAC.v(36): truncated value with size 32 to match size of target (1) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/I2C_Controller_DAC.v Line: 36
+Warning (10230): Verilog HDL assignment warning at I2C_Controller_DAC.v(35): truncated value with size 32 to match size of target (1) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/I2C_Controller_DAC.v Line: 35
+Warning (10230): Verilog HDL assignment warning at I2C_Controller_DAC.v(49): truncated value with size 32 to match size of target (8) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/DAC_controller/I2C_Controller_DAC.v Line: 49
+Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:AC1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 158
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "Audio_Controller:AC1|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/Audio_Controller/Audio_Controller.v Line: 182
 Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/Audio_Controller/Audio_Controller.v Line: 237
 Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "Audio_Controller:AC1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 159
@@ -2903,7 +3057,7 @@ Info (12133): Instantiated megafunction "Audio_Controller:AC1|Audio_Clock:Audio_
 Info (12021): Found 1 design units, including 1 entities, in source file db/audio_clock_altpll.v
     Info (12023): Found entity 1: Audio_Clock_altpll File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/db/audio_clock_altpll.v Line: 30
 Info (12128): Elaborating entity "Audio_Clock_altpll" for hierarchy "Audio_Controller:AC1|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "avconf" for hierarchy "avconf:AVC1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 144
+Info (12128): Elaborating entity "avconf" for hierarchy "avconf:AVC1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 165
 Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/avconf/avconf.v Line: 68
 Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/avconf/avconf.v Line: 119
 Warning (10230): Verilog HDL assignment warning at avconf.v(137): truncated value with size 32 to match size of target (16) File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/avconf/avconf.v Line: 137
@@ -3074,7 +3228,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_olh File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/db/sign_div_unsign_olh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_mve.tdf
     Info (12023): Found entity 1: alt_u_div_mve File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/db/alt_u_div_mve.tdf Line: 23
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
     Info (13026): Duplicate LATCH primitive "loop_counter:L1|total_steps[4]" merged with LATCH primitive "loop_counter:L1|Loops_latched[0]" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 11
     Info (13026): Duplicate LATCH primitive "loop_counter:L1|total_steps[5]" merged with LATCH primitive "loop_counter:L1|Loops_latched[1]" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 11
@@ -3082,25 +3236,28 @@ Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "loop_counter:L1|Play" is converted into an equivalent circuit using register "loop_counter:L1|Play~_emulated" and latch "loop_counter:L1|Play~1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 4
     Warning (13310): Register "loop_counter:L1|done" is converted into an equivalent circuit using register "loop_counter:L1|done~_emulated" and latch "loop_counter:L1|done~1" File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/modules/loop_counter/loop_counter.v Line: 8
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DAC_I2C_SCLK" is stuck at VCC File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 43
+    Warning (13410): Pin "DAC_I2C_A0" is stuck at GND File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/audio_interface.v Line: 44
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 274 registers lost all their fanouts during netlist optimizations.
+Info (17049): 286 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/output_files/audio_interface.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance Audio_Controller:AC1|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: D:/GitHub/ECE241-Project/ECE241-Project/audio_interface/db/audio_clock_altpll.v Line: 63
     Info: Must be connected
-Info (21057): Implemented 1361 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1421 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 13 output pins
-    Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 1154 logic cells
+    Info (21059): Implemented 15 output pins
+    Info (21060): Implemented 5 bidirectional pins
+    Info (21061): Implemented 1211 logic cells
     Info (21064): Implemented 176 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 164 warnings
-    Info: Peak virtual memory: 4937 megabytes
-    Info: Processing ended: Tue Nov 11 00:58:27 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 178 warnings
+    Info: Peak virtual memory: 4962 megabytes
+    Info: Processing ended: Tue Nov 11 22:35:43 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
