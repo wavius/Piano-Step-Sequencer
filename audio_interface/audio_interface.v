@@ -54,12 +54,12 @@ module audio_interface (
 	wire [31:0]  BPM;    // Beats per minute
 	wire [7:0]  Loops;  // Number of playback loops
 	wire        Play;   // Playback enable
-	wire [15:0] Out;    // Audio output
+	wire [31:0] Out;    // Audio output
 
 	// Internal Registers
 	reg  [31:0] left_channel_audio_out;
 	reg  [31:0] right_channel_audio_out;
-	reg  [15:0] audio_signed;
+	reg  [31:0] audio_signed;
 
 	// Sequential Logic
 	always@(posedge CLOCK_50) // Clock with 48kHz
@@ -67,8 +67,8 @@ module audio_interface (
 		if (Play)
 		begin
 			// Sign extend to 32 bits
-			left_channel_audio_out	<= {Out, 16'b0};
-			right_channel_audio_out <= {Out, 16'b0};
+			left_channel_audio_out	<= Out;
+			right_channel_audio_out <= Out;
 			audio_signed            <= Out;
 		end
 		else

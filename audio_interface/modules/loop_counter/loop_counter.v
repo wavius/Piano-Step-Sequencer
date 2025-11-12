@@ -24,7 +24,7 @@ module loop_counter (nReset, nStart, Step, Loops, Play);
 			Q             <= 0;
 			total_steps   <= Loops * 16;
 	   end
-		else if (Loops_latched == 0)
+		else if (Loops_latched == 0 && !done)
 			Play <= 1;
 		else if (!done)
 		begin

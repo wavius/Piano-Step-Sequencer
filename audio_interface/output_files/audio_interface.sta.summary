@@ -3,63 +3,63 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -42.472
-TNS   : -814.374
+Slack : -96.439
+TNS   : -2641.281
 
 Type  : Slow 1100mV 85C Model Setup 'BPM_counter:B1|Step'
-Slack : -4.553
-TNS   : -62.977
+Slack : -4.752
+TNS   : -65.761
 
 Type  : Slow 1100mV 85C Model Setup 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -3.159
-TNS   : -172.713
+Slack : -3.181
+TNS   : -173.624
 
-Type  : Slow 1100mV 85C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.254
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.224
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'BPM_counter:B1|Step'
-Slack : 0.280
+Slack : 0.273
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.321
+Type  : Slow 1100mV 85C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
+Slack : 0.447
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -5.148
-TNS   : -135.733
+Slack : -4.938
+TNS   : -100.608
 
 Type  : Slow 1100mV 85C Model Recovery 'BPM_counter:B1|Step'
-Slack : -3.245
-TNS   : -38.565
+Slack : -3.122
+TNS   : -40.985
 
 Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
-Slack : -3.029
-TNS   : -52.687
+Slack : -2.794
+TNS   : -53.156
 
 Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
-Slack : 1.016
+Slack : 0.772
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 1.499
+Slack : 1.440
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'BPM_counter:B1|Step'
-Slack : 1.536
+Slack : 1.668
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'avconf:AVC1|mI2C_CTRL_CLK'
 Slack : -0.394
-TNS   : -38.126
+TNS   : -37.919
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'BPM_counter:B1|Step'
 Slack : -0.394
-TNS   : -8.627
+TNS   : -7.936
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : 0.053
+Slack : 0.125
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -67,67 +67,67 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.863
+Slack : 8.872
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -45.719
-TNS   : -828.150
+Slack : -102.251
+TNS   : -2752.580
 
 Type  : Slow 1100mV 0C Model Setup 'BPM_counter:B1|Step'
-Slack : -4.514
-TNS   : -62.139
+Slack : -4.771
+TNS   : -64.869
 
 Type  : Slow 1100mV 0C Model Setup 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -3.049
-TNS   : -170.055
+Slack : -3.109
+TNS   : -169.980
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.235
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.241
+Slack : 0.117
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'BPM_counter:B1|Step'
-Slack : 0.281
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
+Slack : 0.441
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -5.035
-TNS   : -133.561
+Slack : -4.871
+TNS   : -99.836
 
 Type  : Slow 1100mV 0C Model Recovery 'BPM_counter:B1|Step'
-Slack : -3.282
-TNS   : -37.982
+Slack : -3.101
+TNS   : -40.698
 
 Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
-Slack : -2.961
-TNS   : -47.689
+Slack : -2.753
+TNS   : -48.218
 
 Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
-Slack : 0.746
+Slack : 0.529
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 1.532
+Slack : 1.473
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'BPM_counter:B1|Step'
-Slack : 1.596
+Slack : 1.687
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'avconf:AVC1|mI2C_CTRL_CLK'
 Slack : -0.394
-TNS   : -37.400
+TNS   : -36.946
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'BPM_counter:B1|Step'
 Slack : -0.394
-TNS   : -8.709
+TNS   : -7.809
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : 0.094
+Slack : 0.137
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -135,67 +135,67 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.822
+Slack : 8.826
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -11.379
-TNS   : -330.382
+Slack : -38.434
+TNS   : -1103.073
 
 Type  : Fast 1100mV 85C Model Setup 'BPM_counter:B1|Step'
-Slack : -2.816
-TNS   : -37.664
+Slack : -2.915
+TNS   : -39.949
 
 Type  : Fast 1100mV 85C Model Setup 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -2.011
-TNS   : -95.040
-
-Type  : Fast 1100mV 85C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.084
-TNS   : 0.000
+Slack : -2.026
+TNS   : -97.989
 
 Type  : Fast 1100mV 85C Model Hold 'BPM_counter:B1|Step'
-Slack : 0.095
+Slack : 0.092
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.182
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
+Slack : 0.162
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -3.399
-TNS   : -89.653
+Slack : -3.237
+TNS   : -65.714
 
 Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
-Slack : -2.198
-TNS   : -39.049
+Slack : -2.026
+TNS   : -39.431
 
 Type  : Fast 1100mV 85C Model Recovery 'BPM_counter:B1|Step'
-Slack : -1.978
-TNS   : -24.008
+Slack : -2.006
+TNS   : -26.347
 
 Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
-Slack : 0.538
+Slack : 0.389
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.671
+Slack : 0.625
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'BPM_counter:B1|Step'
-Slack : 0.702
+Slack : 0.793
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.101
-TNS   : -0.568
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BPM_counter:B1|Step'
-Slack : -0.005
-TNS   : -0.049
+Slack : -0.090
+TNS   : -0.640
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.049
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BPM_counter:B1|Step'
+Slack : 0.056
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -203,67 +203,67 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.788
+Slack : 8.783
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -10.076
-TNS   : -284.238
+Slack : -35.776
+TNS   : -1003.428
 
 Type  : Fast 1100mV 0C Model Setup 'BPM_counter:B1|Step'
-Slack : -2.693
-TNS   : -36.137
+Slack : -2.828
+TNS   : -38.393
 
 Type  : Fast 1100mV 0C Model Setup 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -1.937
-TNS   : -89.910
+Slack : -1.966
+TNS   : -92.407
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : -0.019
-TNS   : -0.070
-
-Type  : Fast 1100mV 0C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.064
+Slack : 0.020
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'BPM_counter:B1|Step'
-Slack : 0.082
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'avconf:AVC1|mI2C_CTRL_CLK'
+Slack : 0.153
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : -3.180
-TNS   : -85.393
-
-Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
-Slack : -2.005
-TNS   : -33.620
+Slack : -3.053
+TNS   : -63.939
 
 Type  : Fast 1100mV 0C Model Recovery 'BPM_counter:B1|Step'
-Slack : -1.963
-TNS   : -23.811
+Slack : -1.967
+TNS   : -25.902
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -1.865
+TNS   : -34.161
 
 Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
-Slack : 0.338
+Slack : 0.214
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.685
+Slack : 0.644
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'BPM_counter:B1|Step'
-Slack : 0.724
+Slack : 0.794
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.085
-TNS   : -0.498
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BPM_counter:B1|Step'
-Slack : 0.024
-TNS   : 0.000
+Slack : -0.083
+TNS   : -0.586
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'avconf:AVC1|mI2C_CTRL_CLK'
-Slack : 0.083
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BPM_counter:B1|Step'
+Slack : 0.080
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -271,7 +271,7 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.781
+Slack : 8.778
 TNS   : 0.000
 
 ------------------------------------------------------------

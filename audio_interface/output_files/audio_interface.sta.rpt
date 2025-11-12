@@ -1,5 +1,5 @@
 Timing Analyzer report for audio_interface
-Wed Nov 12 14:59:05 2025
+Wed Nov 12 17:26:00 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -102,20 +102,20 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.87        ;
+; Average used               ; 2.59        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  11.8%      ;
-;     Processor 3            ;  11.7%      ;
-;     Processor 4            ;  11.3%      ;
-;     Processor 5            ;   9.2%      ;
-;     Processor 6            ;   8.8%      ;
-;     Processor 7            ;   8.8%      ;
-;     Processor 8            ;   8.6%      ;
-;     Processor 9            ;   8.6%      ;
-;     Processor 10           ;   8.6%      ;
+;     Processor 2            ;  32.5%      ;
+;     Processor 3            ;  32.4%      ;
+;     Processor 4            ;  32.2%      ;
+;     Processor 5            ;  10.3%      ;
+;     Processor 6            ;  10.3%      ;
+;     Processor 7            ;  10.3%      ;
+;     Processor 8            ;  10.3%      ;
+;     Processor 9            ;  10.3%      ;
+;     Processor 10           ;  10.3%      ;
 +----------------------------+-------------+
 
 
@@ -138,9 +138,9 @@ on the Quartus Prime software download page.
 +------------+-----------------+---------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                ; Note ;
 +------------+-----------------+---------------------------+------+
-; 16.01 MHz  ; 16.01 MHz       ; CLOCK_50                  ;      ;
-; 289.18 MHz ; 289.18 MHz      ; avconf:AVC1|mI2C_CTRL_CLK ;      ;
-; 309.79 MHz ; 309.79 MHz      ; BPM_counter:B1|Step       ;      ;
+; 8.59 MHz   ; 8.59 MHz        ; CLOCK_50                  ;      ;
+; 286.37 MHz ; 286.37 MHz      ; avconf:AVC1|mI2C_CTRL_CLK ;      ;
+; 321.03 MHz ; 321.03 MHz      ; BPM_counter:B1|Step       ;      ;
 +------------+-----------------+---------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -156,9 +156,9 @@ HTML report is unavailable in plain text report export.
 +---------------------------+---------+---------------+
 ; Clock                     ; Slack   ; End Point TNS ;
 +---------------------------+---------+---------------+
-; CLOCK_50                  ; -42.472 ; -814.374      ;
-; BPM_counter:B1|Step       ; -4.553  ; -62.977       ;
-; avconf:AVC1|mI2C_CTRL_CLK ; -3.159  ; -172.713      ;
+; CLOCK_50                  ; -96.439 ; -2641.281     ;
+; BPM_counter:B1|Step       ; -4.752  ; -65.761       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -3.181  ; -173.624      ;
 +---------------------------+---------+---------------+
 
 
@@ -167,9 +167,9 @@ HTML report is unavailable in plain text report export.
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK ; 0.254 ; 0.000         ;
-; BPM_counter:B1|Step       ; 0.280 ; 0.000         ;
-; CLOCK_50                  ; 0.321 ; 0.000         ;
+; CLOCK_50                  ; 0.224 ; 0.000         ;
+; BPM_counter:B1|Step       ; 0.273 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 0.447 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -178,9 +178,9 @@ HTML report is unavailable in plain text report export.
 +---------------------------+--------+---------------+
 ; Clock                     ; Slack  ; End Point TNS ;
 +---------------------------+--------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK ; -5.148 ; -135.733      ;
-; BPM_counter:B1|Step       ; -3.245 ; -38.565       ;
-; CLOCK_50                  ; -3.029 ; -52.687       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -4.938 ; -100.608      ;
+; BPM_counter:B1|Step       ; -3.122 ; -40.985       ;
+; CLOCK_50                  ; -2.794 ; -53.156       ;
 +---------------------------+--------+---------------+
 
 
@@ -189,9 +189,9 @@ HTML report is unavailable in plain text report export.
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; CLOCK_50                  ; 1.016 ; 0.000         ;
-; avconf:AVC1|mI2C_CTRL_CLK ; 1.499 ; 0.000         ;
-; BPM_counter:B1|Step       ; 1.536 ; 0.000         ;
+; CLOCK_50                  ; 0.772 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 1.440 ; 0.000         ;
+; BPM_counter:B1|Step       ; 1.668 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -200,11 +200,11 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK                                                            ; -0.394 ; -38.126       ;
-; BPM_counter:B1|Step                                                                  ; -0.394 ; -8.627        ;
-; KEY[0]                                                                               ; 0.053  ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK                                                            ; -0.394 ; -37.919       ;
+; BPM_counter:B1|Step                                                                  ; -0.394 ; -7.936        ;
+; KEY[0]                                                                               ; 0.125  ; 0.000         ;
 ; AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; 1.666  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.863  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.872  ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -219,22 +219,22 @@ No synchronizer chains to report.
 +------------+-----------------+---------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                ; Note ;
 +------------+-----------------+---------------------------+------+
-; 15.22 MHz  ; 15.22 MHz       ; CLOCK_50                  ;      ;
-; 285.39 MHz ; 285.39 MHz      ; avconf:AVC1|mI2C_CTRL_CLK ;      ;
-; 320.1 MHz  ; 320.1 MHz       ; BPM_counter:B1|Step       ;      ;
+; 8.18 MHz   ; 8.18 MHz        ; CLOCK_50                  ;      ;
+; 289.35 MHz ; 289.35 MHz      ; avconf:AVC1|mI2C_CTRL_CLK ;      ;
+; 332.78 MHz ; 332.78 MHz      ; BPM_counter:B1|Step       ;      ;
 +------------+-----------------+---------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+-----------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                  ;
-+---------------------------+---------+---------------+
-; Clock                     ; Slack   ; End Point TNS ;
-+---------------------------+---------+---------------+
-; CLOCK_50                  ; -45.719 ; -828.150      ;
-; BPM_counter:B1|Step       ; -4.514  ; -62.139       ;
-; avconf:AVC1|mI2C_CTRL_CLK ; -3.049  ; -170.055      ;
-+---------------------------+---------+---------------+
++------------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                   ;
++---------------------------+----------+---------------+
+; Clock                     ; Slack    ; End Point TNS ;
++---------------------------+----------+---------------+
+; CLOCK_50                  ; -102.251 ; -2752.580     ;
+; BPM_counter:B1|Step       ; -4.771   ; -64.869       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -3.109   ; -169.980      ;
++---------------------------+----------+---------------+
 
 
 +---------------------------------------------------+
@@ -242,9 +242,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; CLOCK_50                  ; 0.235 ; 0.000         ;
-; avconf:AVC1|mI2C_CTRL_CLK ; 0.241 ; 0.000         ;
-; BPM_counter:B1|Step       ; 0.281 ; 0.000         ;
+; CLOCK_50                  ; 0.117 ; 0.000         ;
+; BPM_counter:B1|Step       ; 0.274 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 0.441 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -253,9 +253,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------+--------+---------------+
 ; Clock                     ; Slack  ; End Point TNS ;
 +---------------------------+--------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK ; -5.035 ; -133.561      ;
-; BPM_counter:B1|Step       ; -3.282 ; -37.982       ;
-; CLOCK_50                  ; -2.961 ; -47.689       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -4.871 ; -99.836       ;
+; BPM_counter:B1|Step       ; -3.101 ; -40.698       ;
+; CLOCK_50                  ; -2.753 ; -48.218       ;
 +---------------------------+--------+---------------+
 
 
@@ -264,9 +264,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; CLOCK_50                  ; 0.746 ; 0.000         ;
-; avconf:AVC1|mI2C_CTRL_CLK ; 1.532 ; 0.000         ;
-; BPM_counter:B1|Step       ; 1.596 ; 0.000         ;
+; CLOCK_50                  ; 0.529 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 1.473 ; 0.000         ;
+; BPM_counter:B1|Step       ; 1.687 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -275,11 +275,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK                                                            ; -0.394 ; -37.400       ;
-; BPM_counter:B1|Step                                                                  ; -0.394 ; -8.709        ;
-; KEY[0]                                                                               ; 0.094  ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK                                                            ; -0.394 ; -36.946       ;
+; BPM_counter:B1|Step                                                                  ; -0.394 ; -7.809        ;
+; KEY[0]                                                                               ; 0.137  ; 0.000         ;
 ; AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; 1.666  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.822  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.826  ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -294,9 +294,9 @@ No synchronizer chains to report.
 +---------------------------+---------+---------------+
 ; Clock                     ; Slack   ; End Point TNS ;
 +---------------------------+---------+---------------+
-; CLOCK_50                  ; -11.379 ; -330.382      ;
-; BPM_counter:B1|Step       ; -2.816  ; -37.664       ;
-; avconf:AVC1|mI2C_CTRL_CLK ; -2.011  ; -95.040       ;
+; CLOCK_50                  ; -38.434 ; -1103.073     ;
+; BPM_counter:B1|Step       ; -2.915  ; -39.949       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -2.026  ; -97.989       ;
 +---------------------------+---------+---------------+
 
 
@@ -305,9 +305,9 @@ No synchronizer chains to report.
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK ; 0.084 ; 0.000         ;
-; BPM_counter:B1|Step       ; 0.095 ; 0.000         ;
-; CLOCK_50                  ; 0.182 ; 0.000         ;
+; BPM_counter:B1|Step       ; 0.092 ; 0.000         ;
+; CLOCK_50                  ; 0.133 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 0.162 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -316,9 +316,9 @@ No synchronizer chains to report.
 +---------------------------+--------+---------------+
 ; Clock                     ; Slack  ; End Point TNS ;
 +---------------------------+--------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK ; -3.399 ; -89.653       ;
-; CLOCK_50                  ; -2.198 ; -39.049       ;
-; BPM_counter:B1|Step       ; -1.978 ; -24.008       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -3.237 ; -65.714       ;
+; CLOCK_50                  ; -2.026 ; -39.431       ;
+; BPM_counter:B1|Step       ; -2.006 ; -26.347       ;
 +---------------------------+--------+---------------+
 
 
@@ -327,9 +327,9 @@ No synchronizer chains to report.
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; CLOCK_50                  ; 0.538 ; 0.000         ;
-; avconf:AVC1|mI2C_CTRL_CLK ; 0.671 ; 0.000         ;
-; BPM_counter:B1|Step       ; 0.702 ; 0.000         ;
+; CLOCK_50                  ; 0.389 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 0.625 ; 0.000         ;
+; BPM_counter:B1|Step       ; 0.793 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -338,11 +338,11 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                               ; -0.101 ; -0.568        ;
-; BPM_counter:B1|Step                                                                  ; -0.005 ; -0.049        ;
-; avconf:AVC1|mI2C_CTRL_CLK                                                            ; 0.049  ; 0.000         ;
+; KEY[0]                                                                               ; -0.090 ; -0.640        ;
+; avconf:AVC1|mI2C_CTRL_CLK                                                            ; 0.036  ; 0.000         ;
+; BPM_counter:B1|Step                                                                  ; 0.056  ; 0.000         ;
 ; AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; 1.666  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.788  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.783  ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -357,21 +357,21 @@ No synchronizer chains to report.
 +---------------------------+---------+---------------+
 ; Clock                     ; Slack   ; End Point TNS ;
 +---------------------------+---------+---------------+
-; CLOCK_50                  ; -10.076 ; -284.238      ;
-; BPM_counter:B1|Step       ; -2.693  ; -36.137       ;
-; avconf:AVC1|mI2C_CTRL_CLK ; -1.937  ; -89.910       ;
+; CLOCK_50                  ; -35.776 ; -1003.428     ;
+; BPM_counter:B1|Step       ; -2.828  ; -38.393       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -1.966  ; -92.407       ;
 +---------------------------+---------+---------------+
 
 
-+----------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                  ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; CLOCK_50                  ; -0.019 ; -0.070        ;
-; avconf:AVC1|mI2C_CTRL_CLK ; 0.064  ; 0.000         ;
-; BPM_counter:B1|Step       ; 0.082  ; 0.000         ;
-+---------------------------+--------+---------------+
++---------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                 ;
++---------------------------+-------+---------------+
+; Clock                     ; Slack ; End Point TNS ;
++---------------------------+-------+---------------+
+; CLOCK_50                  ; 0.020 ; 0.000         ;
+; BPM_counter:B1|Step       ; 0.079 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 0.153 ; 0.000         ;
++---------------------------+-------+---------------+
 
 
 +----------------------------------------------------+
@@ -379,9 +379,9 @@ No synchronizer chains to report.
 +---------------------------+--------+---------------+
 ; Clock                     ; Slack  ; End Point TNS ;
 +---------------------------+--------+---------------+
-; avconf:AVC1|mI2C_CTRL_CLK ; -3.180 ; -85.393       ;
-; CLOCK_50                  ; -2.005 ; -33.620       ;
-; BPM_counter:B1|Step       ; -1.963 ; -23.811       ;
+; avconf:AVC1|mI2C_CTRL_CLK ; -3.053 ; -63.939       ;
+; BPM_counter:B1|Step       ; -1.967 ; -25.902       ;
+; CLOCK_50                  ; -1.865 ; -34.161       ;
 +---------------------------+--------+---------------+
 
 
@@ -390,9 +390,9 @@ No synchronizer chains to report.
 +---------------------------+-------+---------------+
 ; Clock                     ; Slack ; End Point TNS ;
 +---------------------------+-------+---------------+
-; CLOCK_50                  ; 0.338 ; 0.000         ;
-; avconf:AVC1|mI2C_CTRL_CLK ; 0.685 ; 0.000         ;
-; BPM_counter:B1|Step       ; 0.724 ; 0.000         ;
+; CLOCK_50                  ; 0.214 ; 0.000         ;
+; avconf:AVC1|mI2C_CTRL_CLK ; 0.644 ; 0.000         ;
+; BPM_counter:B1|Step       ; 0.794 ; 0.000         ;
 +---------------------------+-------+---------------+
 
 
@@ -401,11 +401,11 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                               ; -0.085 ; -0.498        ;
-; BPM_counter:B1|Step                                                                  ; 0.024  ; 0.000         ;
-; avconf:AVC1|mI2C_CTRL_CLK                                                            ; 0.083  ; 0.000         ;
+; KEY[0]                                                                               ; -0.083 ; -0.586        ;
+; avconf:AVC1|mI2C_CTRL_CLK                                                            ; 0.066  ; 0.000         ;
+; BPM_counter:B1|Step                                                                  ; 0.080  ; 0.000         ;
 ; AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; 1.666  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.781  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.778  ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -415,24 +415,24 @@ No synchronizer chains to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                                                   ;
-+---------------------------------------------------------------------------------------+-----------+--------+----------+---------+---------------------+
-; Clock                                                                                 ; Setup     ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
-+---------------------------------------------------------------------------------------+-----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                                                      ; -45.719   ; -0.019 ; -5.148   ; 0.338   ; -0.394              ;
-;  AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; N/A       ; N/A    ; N/A      ; N/A     ; 1.666               ;
-;  BPM_counter:B1|Step                                                                  ; -4.553    ; 0.082  ; -3.282   ; 0.702   ; -0.394              ;
-;  CLOCK_50                                                                             ; -45.719   ; -0.019 ; -3.029   ; 0.338   ; 8.781               ;
-;  KEY[0]                                                                               ; N/A       ; N/A    ; N/A      ; N/A     ; -0.101              ;
-;  avconf:AVC1|mI2C_CTRL_CLK                                                            ; -3.159    ; 0.064  ; -5.148   ; 0.671   ; -0.394              ;
-; Design-wide TNS                                                                       ; -1060.344 ; -0.07  ; -226.985 ; 0.0     ; -46.753             ;
-;  AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; N/A       ; N/A    ; N/A      ; N/A     ; 0.000               ;
-;  BPM_counter:B1|Step                                                                  ; -62.977   ; 0.000  ; -38.565  ; 0.000   ; -8.709              ;
-;  CLOCK_50                                                                             ; -828.150  ; -0.070 ; -52.687  ; 0.000   ; 0.000               ;
-;  KEY[0]                                                                               ; N/A       ; N/A    ; N/A      ; N/A     ; -0.568              ;
-;  avconf:AVC1|mI2C_CTRL_CLK                                                            ; -172.713  ; 0.000  ; -135.733 ; 0.000   ; -38.126             ;
-+---------------------------------------------------------------------------------------+-----------+--------+----------+---------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                                                  ;
++---------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
+; Clock                                                                                 ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
+; Worst-case Slack                                                                      ; -102.251  ; 0.020 ; -4.938   ; 0.214   ; -0.394              ;
+;  AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; N/A       ; N/A   ; N/A      ; N/A     ; 1.666               ;
+;  BPM_counter:B1|Step                                                                  ; -4.771    ; 0.079 ; -3.122   ; 0.793   ; -0.394              ;
+;  CLOCK_50                                                                             ; -102.251  ; 0.020 ; -2.794   ; 0.214   ; 8.778               ;
+;  KEY[0]                                                                               ; N/A       ; N/A   ; N/A      ; N/A     ; -0.090              ;
+;  avconf:AVC1|mI2C_CTRL_CLK                                                            ; -3.181    ; 0.153 ; -4.938   ; 0.625   ; -0.394              ;
+; Design-wide TNS                                                                       ; -2987.429 ; 0.0   ; -194.749 ; 0.0     ; -45.855             ;
+;  AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] ; N/A       ; N/A   ; N/A      ; N/A     ; 0.000               ;
+;  BPM_counter:B1|Step                                                                  ; -65.761   ; 0.000 ; -40.985  ; 0.000   ; -7.936              ;
+;  CLOCK_50                                                                             ; -2752.580 ; 0.000 ; -53.156  ; 0.000   ; 0.000               ;
+;  KEY[0]                                                                               ; N/A       ; N/A   ; N/A      ; N/A     ; -0.640              ;
+;  avconf:AVC1|mI2C_CTRL_CLK                                                            ; -173.624  ; 0.000 ; -100.608 ; 0.000   ; -37.919             ;
++---------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -498,7 +498,7 @@ No synchronizer chains to report.
 ; AUD_DACDAT    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; FPGA_I2C_SCLK ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; DAC_I2C_SCLK  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; LEDR[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
@@ -526,7 +526,7 @@ No synchronizer chains to report.
 ; AUD_DACDAT    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; FPGA_I2C_SCLK ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; DAC_I2C_SCLK  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; LEDR[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
@@ -554,7 +554,7 @@ No synchronizer chains to report.
 ; AUD_DACDAT    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; FPGA_I2C_SCLK ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; DAC_I2C_SCLK  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; LEDR[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; LEDR[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; LEDR[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
@@ -582,7 +582,7 @@ No synchronizer chains to report.
 ; AUD_DACDAT    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; FPGA_I2C_SCLK ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; DAC_I2C_SCLK  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; DAC_I2C_A0    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; LEDR[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; LEDR[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
@@ -606,14 +606,14 @@ No synchronizer chains to report.
 +---------------------------+---------------------------+--------------+----------+----------+----------+
 ; From Clock                ; To Clock                  ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------+---------------------------+--------------+----------+----------+----------+
-; avconf:AVC1|mI2C_CTRL_CLK ; avconf:AVC1|mI2C_CTRL_CLK ; 809          ; 0        ; 0        ; 0        ;
+; avconf:AVC1|mI2C_CTRL_CLK ; avconf:AVC1|mI2C_CTRL_CLK ; 739          ; 0        ; 0        ; 0        ;
 ; KEY[0]                    ; avconf:AVC1|mI2C_CTRL_CLK ; 36           ; 36       ; 0        ; 0        ;
 ; BPM_counter:B1|Step       ; BPM_counter:B1|Step       ; 260          ; 0        ; 0        ; 0        ;
 ; KEY[0]                    ; BPM_counter:B1|Step       ; 28           ; 126      ; 0        ; 0        ;
 ; avconf:AVC1|mI2C_CTRL_CLK ; CLOCK_50                  ; 1            ; 1        ; 0        ; 0        ;
-; BPM_counter:B1|Step       ; CLOCK_50                  ; 16           ; 0        ; 0        ; 0        ;
+; BPM_counter:B1|Step       ; CLOCK_50                  ; 32           ; 0        ; 0        ; 0        ;
 ; CLOCK_50                  ; CLOCK_50                  ; > 2147483647 ; 0        ; 0        ; 0        ;
-; KEY[0]                    ; CLOCK_50                  ; 211          ; 211      ; 0        ; 0        ;
+; KEY[0]                    ; CLOCK_50                  ; 243          ; 243      ; 0        ; 0        ;
 +---------------------------+---------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -623,14 +623,14 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------+---------------------------+--------------+----------+----------+----------+
 ; From Clock                ; To Clock                  ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------+---------------------------+--------------+----------+----------+----------+
-; avconf:AVC1|mI2C_CTRL_CLK ; avconf:AVC1|mI2C_CTRL_CLK ; 809          ; 0        ; 0        ; 0        ;
+; avconf:AVC1|mI2C_CTRL_CLK ; avconf:AVC1|mI2C_CTRL_CLK ; 739          ; 0        ; 0        ; 0        ;
 ; KEY[0]                    ; avconf:AVC1|mI2C_CTRL_CLK ; 36           ; 36       ; 0        ; 0        ;
 ; BPM_counter:B1|Step       ; BPM_counter:B1|Step       ; 260          ; 0        ; 0        ; 0        ;
 ; KEY[0]                    ; BPM_counter:B1|Step       ; 28           ; 126      ; 0        ; 0        ;
 ; avconf:AVC1|mI2C_CTRL_CLK ; CLOCK_50                  ; 1            ; 1        ; 0        ; 0        ;
-; BPM_counter:B1|Step       ; CLOCK_50                  ; 16           ; 0        ; 0        ; 0        ;
+; BPM_counter:B1|Step       ; CLOCK_50                  ; 32           ; 0        ; 0        ; 0        ;
 ; CLOCK_50                  ; CLOCK_50                  ; > 2147483647 ; 0        ; 0        ; 0        ;
-; KEY[0]                    ; CLOCK_50                  ; 211          ; 211      ; 0        ; 0        ;
+; KEY[0]                    ; CLOCK_50                  ; 243          ; 243      ; 0        ; 0        ;
 +---------------------------+---------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -640,9 +640,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+---------------------------+----------+----------+----------+----------+
 ; From Clock ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+---------------------------+----------+----------+----------+----------+
-; KEY[0]     ; avconf:AVC1|mI2C_CTRL_CLK ; 35       ; 35       ; 0        ; 0        ;
+; KEY[0]     ; avconf:AVC1|mI2C_CTRL_CLK ; 32       ; 32       ; 0        ; 0        ;
 ; KEY[0]     ; BPM_counter:B1|Step       ; 16       ; 16       ; 0        ; 0        ;
-; KEY[0]     ; CLOCK_50                  ; 18       ; 18       ; 0        ; 0        ;
+; KEY[0]     ; CLOCK_50                  ; 20       ; 20       ; 0        ; 0        ;
 +------------+---------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -652,9 +652,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+---------------------------+----------+----------+----------+----------+
 ; From Clock ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+---------------------------+----------+----------+----------+----------+
-; KEY[0]     ; avconf:AVC1|mI2C_CTRL_CLK ; 35       ; 35       ; 0        ; 0        ;
+; KEY[0]     ; avconf:AVC1|mI2C_CTRL_CLK ; 32       ; 32       ; 0        ; 0        ;
 ; KEY[0]     ; BPM_counter:B1|Step       ; 16       ; 16       ; 0        ; 0        ;
-; KEY[0]     ; CLOCK_50                  ; 18       ; 18       ; 0        ; 0        ;
+; KEY[0]     ; CLOCK_50                  ; 20       ; 20       ; 0        ; 0        ;
 +------------+---------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -679,7 +679,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 15    ; 15   ;
-; Unconstrained Input Port Paths  ; 413   ; 413  ;
+; Unconstrained Input Port Paths  ; 549   ; 549  ;
 ; Unconstrained Output Ports      ; 14    ; 14   ;
 ; Unconstrained Output Port Paths ; 24    ; 24   ;
 +---------------------------------+-------+------+
@@ -795,7 +795,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Wed Nov 12 14:58:56 2025
+    Info: Processing started: Wed Nov 12 17:25:47 2025
 Info: Command: quartus_sta audio_interface -c audio_interface
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -811,8 +811,8 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 24 -duty_cycle 50.00 -name {AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk} {AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk}
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
     Info (332105): create_clock -period 1.000 -name BPM_counter:B1|Step BPM_counter:B1|Step
+    Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
     Info (332105): create_clock -period 1.000 -name avconf:AVC1|mI2C_CTRL_CLK avconf:AVC1|mI2C_CTRL_CLK
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL  from: refclkin  to: fbclk
@@ -824,38 +824,38 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -42.472
+Info (332146): Worst-case setup slack is -96.439
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -42.472            -814.374 CLOCK_50 
-    Info (332119):    -4.553             -62.977 BPM_counter:B1|Step 
-    Info (332119):    -3.159            -172.713 avconf:AVC1|mI2C_CTRL_CLK 
-Info (332146): Worst-case hold slack is 0.254
+    Info (332119):   -96.439           -2641.281 CLOCK_50 
+    Info (332119):    -4.752             -65.761 BPM_counter:B1|Step 
+    Info (332119):    -3.181            -173.624 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case hold slack is 0.224
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.254               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     0.280               0.000 BPM_counter:B1|Step 
-    Info (332119):     0.321               0.000 CLOCK_50 
-Info (332146): Worst-case recovery slack is -5.148
+    Info (332119):     0.224               0.000 CLOCK_50 
+    Info (332119):     0.273               0.000 BPM_counter:B1|Step 
+    Info (332119):     0.447               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case recovery slack is -4.938
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.148            -135.733 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):    -3.245             -38.565 BPM_counter:B1|Step 
-    Info (332119):    -3.029             -52.687 CLOCK_50 
-Info (332146): Worst-case removal slack is 1.016
+    Info (332119):    -4.938            -100.608 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -3.122             -40.985 BPM_counter:B1|Step 
+    Info (332119):    -2.794             -53.156 CLOCK_50 
+Info (332146): Worst-case removal slack is 0.772
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.016               0.000 CLOCK_50 
-    Info (332119):     1.499               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     1.536               0.000 BPM_counter:B1|Step 
+    Info (332119):     0.772               0.000 CLOCK_50 
+    Info (332119):     1.440               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):     1.668               0.000 BPM_counter:B1|Step 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -38.126 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):    -0.394              -8.627 BPM_counter:B1|Step 
-    Info (332119):     0.053               0.000 KEY[0] 
+    Info (332119):    -0.394             -37.919 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -0.394              -7.936 BPM_counter:B1|Step 
+    Info (332119):     0.125               0.000 KEY[0] 
     Info (332119):     1.666               0.000 AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.863               0.000 CLOCK_50 
+    Info (332119):     8.872               0.000 CLOCK_50 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -866,38 +866,38 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -45.719
+Info (332146): Worst-case setup slack is -102.251
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -45.719            -828.150 CLOCK_50 
-    Info (332119):    -4.514             -62.139 BPM_counter:B1|Step 
-    Info (332119):    -3.049            -170.055 avconf:AVC1|mI2C_CTRL_CLK 
-Info (332146): Worst-case hold slack is 0.235
+    Info (332119):  -102.251           -2752.580 CLOCK_50 
+    Info (332119):    -4.771             -64.869 BPM_counter:B1|Step 
+    Info (332119):    -3.109            -169.980 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case hold slack is 0.117
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.235               0.000 CLOCK_50 
-    Info (332119):     0.241               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     0.281               0.000 BPM_counter:B1|Step 
-Info (332146): Worst-case recovery slack is -5.035
+    Info (332119):     0.117               0.000 CLOCK_50 
+    Info (332119):     0.274               0.000 BPM_counter:B1|Step 
+    Info (332119):     0.441               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case recovery slack is -4.871
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.035            -133.561 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):    -3.282             -37.982 BPM_counter:B1|Step 
-    Info (332119):    -2.961             -47.689 CLOCK_50 
-Info (332146): Worst-case removal slack is 0.746
+    Info (332119):    -4.871             -99.836 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -3.101             -40.698 BPM_counter:B1|Step 
+    Info (332119):    -2.753             -48.218 CLOCK_50 
+Info (332146): Worst-case removal slack is 0.529
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.746               0.000 CLOCK_50 
-    Info (332119):     1.532               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     1.596               0.000 BPM_counter:B1|Step 
+    Info (332119):     0.529               0.000 CLOCK_50 
+    Info (332119):     1.473               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):     1.687               0.000 BPM_counter:B1|Step 
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -37.400 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):    -0.394              -8.709 BPM_counter:B1|Step 
-    Info (332119):     0.094               0.000 KEY[0] 
+    Info (332119):    -0.394             -36.946 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -0.394              -7.809 BPM_counter:B1|Step 
+    Info (332119):     0.137               0.000 KEY[0] 
     Info (332119):     1.666               0.000 AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.822               0.000 CLOCK_50 
+    Info (332119):     8.826               0.000 CLOCK_50 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -908,38 +908,38 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -11.379
+Info (332146): Worst-case setup slack is -38.434
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.379            -330.382 CLOCK_50 
-    Info (332119):    -2.816             -37.664 BPM_counter:B1|Step 
-    Info (332119):    -2.011             -95.040 avconf:AVC1|mI2C_CTRL_CLK 
-Info (332146): Worst-case hold slack is 0.084
+    Info (332119):   -38.434           -1103.073 CLOCK_50 
+    Info (332119):    -2.915             -39.949 BPM_counter:B1|Step 
+    Info (332119):    -2.026             -97.989 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case hold slack is 0.092
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.084               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     0.095               0.000 BPM_counter:B1|Step 
-    Info (332119):     0.182               0.000 CLOCK_50 
-Info (332146): Worst-case recovery slack is -3.399
+    Info (332119):     0.092               0.000 BPM_counter:B1|Step 
+    Info (332119):     0.133               0.000 CLOCK_50 
+    Info (332119):     0.162               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case recovery slack is -3.237
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.399             -89.653 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):    -2.198             -39.049 CLOCK_50 
-    Info (332119):    -1.978             -24.008 BPM_counter:B1|Step 
-Info (332146): Worst-case removal slack is 0.538
+    Info (332119):    -3.237             -65.714 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -2.026             -39.431 CLOCK_50 
+    Info (332119):    -2.006             -26.347 BPM_counter:B1|Step 
+Info (332146): Worst-case removal slack is 0.389
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.538               0.000 CLOCK_50 
-    Info (332119):     0.671               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     0.702               0.000 BPM_counter:B1|Step 
-Info (332146): Worst-case minimum pulse width slack is -0.101
+    Info (332119):     0.389               0.000 CLOCK_50 
+    Info (332119):     0.625               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):     0.793               0.000 BPM_counter:B1|Step 
+Info (332146): Worst-case minimum pulse width slack is -0.090
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.101              -0.568 KEY[0] 
-    Info (332119):    -0.005              -0.049 BPM_counter:B1|Step 
-    Info (332119):     0.049               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -0.090              -0.640 KEY[0] 
+    Info (332119):     0.036               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):     0.056               0.000 BPM_counter:B1|Step 
     Info (332119):     1.666               0.000 AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.788               0.000 CLOCK_50 
+    Info (332119):     8.783               0.000 CLOCK_50 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL  from: refclkin  to: fbclk
@@ -948,44 +948,44 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.076
+Info (332146): Worst-case setup slack is -35.776
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.076            -284.238 CLOCK_50 
-    Info (332119):    -2.693             -36.137 BPM_counter:B1|Step 
-    Info (332119):    -1.937             -89.910 avconf:AVC1|mI2C_CTRL_CLK 
-Info (332146): Worst-case hold slack is -0.019
+    Info (332119):   -35.776           -1003.428 CLOCK_50 
+    Info (332119):    -2.828             -38.393 BPM_counter:B1|Step 
+    Info (332119):    -1.966             -92.407 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case hold slack is 0.020
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.019              -0.070 CLOCK_50 
-    Info (332119):     0.064               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     0.082               0.000 BPM_counter:B1|Step 
-Info (332146): Worst-case recovery slack is -3.180
+    Info (332119):     0.020               0.000 CLOCK_50 
+    Info (332119):     0.079               0.000 BPM_counter:B1|Step 
+    Info (332119):     0.153               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+Info (332146): Worst-case recovery slack is -3.053
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.180             -85.393 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):    -2.005             -33.620 CLOCK_50 
-    Info (332119):    -1.963             -23.811 BPM_counter:B1|Step 
-Info (332146): Worst-case removal slack is 0.338
+    Info (332119):    -3.053             -63.939 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -1.967             -25.902 BPM_counter:B1|Step 
+    Info (332119):    -1.865             -34.161 CLOCK_50 
+Info (332146): Worst-case removal slack is 0.214
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.338               0.000 CLOCK_50 
-    Info (332119):     0.685               0.000 avconf:AVC1|mI2C_CTRL_CLK 
-    Info (332119):     0.724               0.000 BPM_counter:B1|Step 
-Info (332146): Worst-case minimum pulse width slack is -0.085
+    Info (332119):     0.214               0.000 CLOCK_50 
+    Info (332119):     0.644               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):     0.794               0.000 BPM_counter:B1|Step 
+Info (332146): Worst-case minimum pulse width slack is -0.083
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.085              -0.498 KEY[0] 
-    Info (332119):     0.024               0.000 BPM_counter:B1|Step 
-    Info (332119):     0.083               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):    -0.083              -0.586 KEY[0] 
+    Info (332119):     0.066               0.000 avconf:AVC1|mI2C_CTRL_CLK 
+    Info (332119):     0.080               0.000 BPM_counter:B1|Step 
     Info (332119):     1.666               0.000 AC1|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.781               0.000 CLOCK_50 
+    Info (332119):     8.778               0.000 CLOCK_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5426 megabytes
-    Info: Processing ended: Wed Nov 12 14:59:05 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 5443 megabytes
+    Info: Processing ended: Wed Nov 12 17:26:00 2025
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:22
 
 

@@ -12,7 +12,7 @@ module DAC_controller (
 	// Host Side
 	input		 		CLOCK_50;
 	input		 		reset;
-	input signed [15:0] audio_in_signed;
+	input signed [31:0] audio_in_signed;
 	// I2C Side
 	output		 		DAC_I2C_SCLK;
 	inout		 		DAC_I2C_SDAT;
@@ -25,8 +25,8 @@ module DAC_controller (
 	wire		 		mI2C_ACK;
 	wire		 		iRST_N 			  = !reset;
 
-	wire [16:0] 		audio_in_unsigned = audio_in_signed + 17'd32768; // shift audio_in to unsigned range
-	wire [11:0] 		audio_in_12b      = audio_in_unsigned[15:4];     // audio_in_unsigned / 16
+	wire [31:0] 		audio_in_unsigned = audio_in_signed + 31'h7FFFFFFF; // shift audio_in to unsigned range
+	wire [11:0] 		audio_in_12b      = audio_in_unsigned[31:20];       // audio_in_unsigned / 16
 
 	// Clock Setting
 	parameter CLK_Freq		= 50_000_000;  // 50  MHz
