@@ -1,6 +1,6 @@
-module audio_generator (Clock, nStart, Select, Out);
+module audio_generator_16b_signed (Clock, nStart, Select, Out);
 	input Clock, nStart;
-	input [11:0] Select;
+	input 		   	  [11:0] Select;
 	output reg signed [31:0] Out;
 
 	// Phase increment = freq_note/freq_clock * 2^N
@@ -18,18 +18,18 @@ module audio_generator (Clock, nStart, Select, Out);
 
 	wire signed [31:0] amplitude [11:0];
 	
-	waveform_generator W1  (Clock, nStart, C,    amplitude[0]);
-	waveform_generator W2  (Clock, nStart, C_sh, amplitude[1]);
-	waveform_generator W3  (Clock, nStart, D,    amplitude[2]);
-	waveform_generator W4  (Clock, nStart, D_sh, amplitude[3]);
-	waveform_generator W5  (Clock, nStart, E,    amplitude[4]);
-	waveform_generator W6  (Clock, nStart, F,    amplitude[5]);
-	waveform_generator W7  (Clock, nStart, F_sh, amplitude[6]);
-	waveform_generator W8  (Clock, nStart, G,    amplitude[7]);
-	waveform_generator W9  (Clock, nStart, G_sh, amplitude[8]);
-	waveform_generator W10 (Clock, nStart, A,    amplitude[9]);
-	waveform_generator W11 (Clock, nStart, A_sh, amplitude[10]);
-	waveform_generator W12 (Clock, nStart, B,    amplitude[11]);
+	waveform_generator_16b W1  (Clock, nStart, C,    amplitude[0]);
+	waveform_generator_16b W2  (Clock, nStart, C_sh, amplitude[1]);
+	waveform_generator_16b W3  (Clock, nStart, D,    amplitude[2]);
+	waveform_generator_16b W4  (Clock, nStart, D_sh, amplitude[3]);
+	waveform_generator_16b W5  (Clock, nStart, E,    amplitude[4]);
+	waveform_generator_16b W6  (Clock, nStart, F,    amplitude[5]);
+	waveform_generator_16b W7  (Clock, nStart, F_sh, amplitude[6]);
+	waveform_generator_16b W8  (Clock, nStart, G,    amplitude[7]);
+	waveform_generator_16b W9  (Clock, nStart, G_sh, amplitude[8]);
+	waveform_generator_16b W10 (Clock, nStart, A,    amplitude[9]);
+	waveform_generator_16b W11 (Clock, nStart, A_sh, amplitude[10]);
+	waveform_generator_16b W12 (Clock, nStart, B,    amplitude[11]);
 
 	reg signed [63:0] amplitude_sum;
 	integer j;
@@ -45,19 +45,19 @@ module audio_generator (Clock, nStart, Select, Out);
 	end
 endmodule
 
-module waveform_generator(Clock, nStart, phase_increment, amplitude);
+module waveform_generator_16b (Clock, nStart, phase_increment, amplitude);
 	input Clock, nStart;
 	input [31:0] phase_increment;
 	output signed [31:0] amplitude;
 
 	wire [31:0] phase_angle;
-	numerically_controlled_oscillator N1 (Clock, nStart, phase_increment, phase_angle);
+	numerically_controlled_oscillator_16b N1 (Clock, nStart, phase_increment, phase_angle);
 
 	// sine lookup table
 	rom4096x32 U1 (phase_angle[31:20], Clock, amplitude);
 endmodule
 
-module numerically_controlled_oscillator(Clock, nStart, phase_increment, phase_angle);
+module numerically_controlled_oscillator_16b (Clock, nStart, phase_increment, phase_angle);
 	input Clock, nStart;
 	input [31:0] phase_increment;
 	output reg [31:0] phase_angle;

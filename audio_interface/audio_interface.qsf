@@ -319,20 +319,21 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_AC18 -to DAC_I2C_SDAT
 set_location_assignment PIN_Y17 -to DAC_I2C_SCLK
-set_global_assignment -name VERILOG_FILE modules/rom4096x32/rom4096x32.v
-set_global_assignment -name QIP_FILE modules/rom4096x32/rom4096x32.qip
+set_global_assignment -name MIF_FILE modules/rom/sine4096.mif
+set_global_assignment -name MIF_FILE modules/rom/sine256.mif
+set_global_assignment -name QIP_FILE modules/rom/rom4096x32.qip
+set_global_assignment -name VERILOG_FILE modules/rom/rom256x12.v
+set_global_assignment -name QIP_FILE modules/rom/rom256x12.qip
+set_global_assignment -name VERILOG_FILE modules/audio_generators/audio_generator_16b_signed.v
+set_global_assignment -name VERILOG_FILE modules/audio_generators/audio_generator_12b_unsigned.v
 set_global_assignment -name VERILOG_FILE audio_interface.v
-set_global_assignment -name MIF_FILE modules/rom4096x32/sine4096.mif
 set_global_assignment -name VERILOG_FILE modules/audio_interface/audio_interface_module.v
 set_global_assignment -name VERILOG_FILE modules/DAC_controller/I2C_Controller_DAC.v
 set_global_assignment -name VERILOG_FILE modules/DAC_controller/DAC_controller.v
-set_global_assignment -name VERILOG_FILE modules/rom256x16/rom256x16.v
-set_global_assignment -name QIP_FILE modules/rom256x16/rom256x16.qip
 set_global_assignment -name VERILOG_FILE modules/loop_counter/loop_counter.v
 set_global_assignment -name VERILOG_FILE modules/BPM_counter/BPM_counter.v
 set_global_assignment -name VERILOG_FILE modules/avconf/I2C_Controller.v
 set_global_assignment -name VERILOG_FILE modules/avconf/avconf.v
-set_global_assignment -name VERILOG_FILE modules/audio_generator/audio_generator.v
 set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Audio_Controller.v
 set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Audio_Clock.v
 set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Altera_UP_SYNC_FIFO.v
@@ -340,4 +341,6 @@ set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Altera_UP_Cloc
 set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Altera_UP_Audio_Out_Serializer.v
 set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Altera_UP_Audio_In_Deserializer.v
 set_global_assignment -name VERILOG_FILE modules/Audio_Controller/Altera_UP_Audio_Bit_Counter.v
+set_global_assignment -name QIP_FILE rom256x12.qip
+set_global_assignment -name QIP_FILE rom4096x32.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
