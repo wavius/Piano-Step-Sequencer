@@ -1,2 +1,2 @@
 # Step Sequencer
-Step Sequencer implemented on the DE1-SoC
+Step sequencer implemented on the DE1-SoC
