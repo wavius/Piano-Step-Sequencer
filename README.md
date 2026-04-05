@@ -72,11 +72,6 @@ Starts the audio sequence.
 - `Backspace` → Clear digit input in BPM/Loops modes.
 - `Enter` → State confirmation.
 
-#
-
-## Hardware Setup
-![Hardware Interface](images/hardware_setup.png)
-
 ## Bugs & Issues
 - **Audio Ringing:** High-frequency artifacts occur when summing multiple notes; likely due to phase misalignment in the summation logic.
 - **Precision Loss:** Clock division for specific musical frequencies causes slight tuning inaccuracies in higher octaves.
