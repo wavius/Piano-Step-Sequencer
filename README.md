@@ -2,8 +2,16 @@
 
 A digital music step sequencer implemented on the DE1-SoC FPGA. 
 
+<div align="left">
+  <img src="images/ss_inlab.jpg" alt="Step Sequencer in Lab" width="900px">
+</div>
+
+<br>
+
 ## Block Diagram
-![Block Diagram](images/block_diagram.png)
+<div align="left">
+  <img src="images/block_diagram.png" alt="Block Diagram" width="900px">
+</div>
 
 ## Overview
 
