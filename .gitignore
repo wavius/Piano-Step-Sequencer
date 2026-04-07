@@ -1,1 +1,59 @@
 **/.vscode/
+
+# === Quartus Managed Files ===
+db/
+incremental_db/
+output_files/
+# Exception: Keep the programming file
+!output_files/*.sof
+# Exception: Keep the JTAG Chain file if you use it
+!output_files/*.jdc
+
+# === Quartus Temp/Log Files ===
+*.rpt
+*.summary
+*.qmsg
+*.txt
+*.smsg
+*.jdi
+*.pin
+*.done
+*.sld
+*.bak
+*.orig
+hc_output/
+greybox_tmp/
+
+# === ModelSim / QuestaSim ===
+# Ignore the work library and simulation artifacts
+work/
+transcript
+vsim.wlf
+*.mpf
+*.cr.mti
+*.vstf
+*.db
+msim_transcript
+
+# === Qsys / Platform Designer ===
+# These generate massive amounts of synthesis files that can be rebuilt
+.qsys_edit/
+# Depending on your workflow, you may want to ignore the synthesis folder 
+# but keep the .qsys file itself.
+# *_shared/
+# *_sim/
+
+# === OS & IDE specific ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# === C/Embedded (Nios V / HPS) ===
+# If you are writing drivers for your Logic Analyzer
+obj/
+*.o
+*.elf
+*.map
