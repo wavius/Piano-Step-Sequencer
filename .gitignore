@@ -4,8 +4,6 @@
 db/
 incremental_db/
 output_files/
-# Exception: Keep the programming file
-!output_files/*.sof
 # Exception: Keep the JTAG Chain file if you use it
 !output_files/*.jdc
 
